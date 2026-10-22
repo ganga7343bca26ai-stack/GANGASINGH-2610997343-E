@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Course Registration</title>
+</head>
+<body>
+
+    <h1 align="center">Online Course Registration Form</h1>[cite: 7]
+
+    <!-- Task 1: Form with action and target attributes -->
+    <form action="#" method="POST" target="_blank">
+
+        <!-- Task 7: Hidden input field -->
+        <input type="hidden" name="form_title" value="Online Course Registration">[cite: 7]
+
+        <!-- Task 2, 3, 11: Student Name (Mandatory) -->
+        <p>
+            <label for="student_name">Student Name:</label><br>
+            <input type="text" id="student_name" name="student_name" placeholder="Enter your full name" required>[cite: 7]
+        </p>
+
+        <!-- Task 2, 3, 11: Email Address (Mandatory) -->
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>[cite: 7]
+        </p>
+
+        <!-- Task 2, 3, 11: Mobile Number (Mandatory) -->
+        <p>
+            <label for="mobile">Mobile Number:</label><br>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>[cite: 7]
+        </p>
+
+        <!-- Task 2, 3: Age -->
+        <p>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" placeholder="Enter your age">[cite: 7]
+        </p>
+
+        <!-- Task 2, 3, 11: Password (Mandatory) -->
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>[cite: 7]
+        </p>
+
+        <!-- Task 4, 11: Gender (Mandatory radio buttons) -->
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>[cite: 7]
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>[cite: 7]
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>[cite: 7]
+        </p>
+
+        <!-- Task 5: Skills Checkboxes -->
+        <p>
+            <label>Skills:</label><br>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>[cite: 7]
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>[cite: 7]
+            <input type="checkbox" id="js" name="skills" value="JavaScript">
+            <label for="js">JavaScript</label>[cite: 7]
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label>[cite: 7]
+        </p>
+
+        <!-- Task 6, 11: Course Selection (Mandatory Drop-down) -->
+        <p>
+            <label for="course">Select Course:</label><br>
+            <select id="course" name="course" required>[cite: 7]
+                <option value="">--Select Course--</option>
+                <option value="Web Development">Web Development</option>[cite: 7]
+                <option value="Python Programming">Python Programming</option>[cite: 7]
+                <option value="Data Analytics">Data Analytics</option>[cite: 7]
+                <option value="Digital Marketing">Digital Marketing</option>[cite: 7]
+            </select>
+        </p>
+
+        <!-- Task 8: Date of Birth and Preferred Class Time -->
+        <p>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob">[cite: 7]
+        </p>
+        <p>
+            <label for="class_time">Preferred Class Time:</label><br>
+            <input type="time" id="class_time" name="class_time">[cite: 7]
+        </p>
+
+        <!-- Task 9: Address / Additional Information -->
+        <p>
+            <label for="address">Address / Additional Information:</label><br>
+            <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address or details"></textarea>[cite: 7]
+        </p>
+
+        <!-- Task 10: File Upload Field -->
+        <p>
+            <label for="document">Upload Document or Photograph:</label><br>
+            <input type="file" id="document" name="document">[cite: 7]
+        </p>
+
+        <!-- Task 12: Submit and Reset Controls -->
+        <p>
+            <input type="submit" value="Register">[cite: 7]
+            <input type="reset" value="Clear">[cite: 7]
+        </p>
+
+    </form>
+
+</body>
+</html>
