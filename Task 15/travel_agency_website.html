@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore the World – Travel Agency</title>
+</head>
+<body>
+
+    <!-- Task 1 & 2: Header Section -->
+    <iframe srcdoc="<html><body style='text-align:center; font-family:sans-serif; background-color:#eef; padding:10px;'><h2>EXPLORE THE WORLD</h2><p><b>Welcome Message:</b> Your journey to amazing adventures begins here!</p><p>Short Description: Discover the best destinations and customized travel packages worldwide.</p></body></html>" width="100%" height="120" style="border:1px solid #ccc;"></iframe>
+
+    <br>
+
+    <!-- Task 2 & 3: Main Content Section (Three Columns: Navigation, Destinations, Packages) -->
+    <table border="1" width="100%" cellpadding="5" cellspacing="0">
+        <tr valign="top">
+            <!-- Navigation Column (25%) -->
+            <td width="25%">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#" onclick="document.getElementById('center-frame').srcdoc='<h2>Home</h2><p>Welcome to our travel portal! Choose a section from the navigation menu to explore destinations and packages.</p>'; return false;">HOME</a></li>
+                    <li><a href="#" onclick="document.getElementById('center-frame').srcdoc='<h2>Tourist Destinations</h2><ul><li><b>Manali:</b> Scenic snow-capped mountains and valleys.</li><li><b>Goa:</b> Beautiful beaches and vibrant nightlife.</li><li><b>Jaipur:</b> Historic forts, palaces, and royal culture.</li></ul>'; return false;">DESTINATIONS</a></li>
+                    <li><a href="#" onclick="document.getElementById('center-frame').srcdoc='<h2>Travel Packages</h2><ul><li><b>Budget Package:</b> Affordable stays and guided group tours.</li><li><b>Family Package:</b> Relaxing itineraries with all-inclusive resorts.</li><li><b>Adventure Package:</b> Thrilling sports, trekking, and camping.</li></ul>'; return false;">PACKAGES</a></li>
+                </ul>
+            </td>
+
+            <!-- Tourist Destinations Column (45%) -->
+            <td width="45%">
+                <iframe id="center-frame" name="destinationframe" srcdoc="<h2>Tourist Destinations</h2><p><b>MANALI:</b> Mountain views & adventure sports.<br><br><b>GOA:</b> Sun, sand, and beaches.<br><br><b>JAIPUR:</b> Rich heritage and royal palaces.</p>" width="100%" height="250" style="border:none;"></iframe>
+            </td>
+
+            <!-- Travel Packages Column (30%) -->
+            <td width="30%">
+                <h3>Travel Packages</h3>
+                <ul>
+                    <li><b>BUDGET:</b> Cost-effective travel plans.</li>
+                    <li><b>FAMILY:</b> Comfortable group trips.</li>
+                    <li><b>ADVENTURE:</b> Thrill-seeking experiences.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Task 2 & 10: Footer Section -->
+    <iframe srcdoc="<html><body style='text-align:center; font-family:sans-serif; background-color:#eef; padding:5px; font-size:14px;'><p><b>Contact Details:</b> +91 9876543210 | <b>Email Address:</b> support@exploretheworld.com | <b>Copyright Info:</b> &copy; 2026 Explore the World Agency. All rights reserved.</p></body></html>" width="100%" height="70" style="border:1px solid #ccc;"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+</head>
+<body>
+
+    <!-- Task 1: Header Section -->
+    <iframe srcdoc="<html><body style='text-align:center; font-family:sans-serif;'><h1>Global Institute of Technology</h1><p>Empowering minds and shaping futures through excellence in education.</p></body></html>" width="100%" height="100" style="border:1px solid #ccc;"></iframe>
+
+    <br><br>
+
+    <!-- Task 2 & 5: Navigation and Main Content Frames -->
+    <table border="1" width="100%" cellpadding="5" cellspacing="0">
+        <tr>
+            <!-- Navigation Frame -->
+            <td width="25%" valign="top">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#home" onclick="document.getElementById('content-frame').srcdoc='<h2>Welcome to Home</h2><p>Welcome to our official college portal. Explore our programs, campus life, and achievements.</p>'; return false;">Home</a></li>
+                    <li><a href="#about" onclick="document.getElementById('content-frame').srcdoc='<h2>About Us</h2><p>Founded in 1995, our college has a rich history of academic brilliance, innovation, and holistic student development.</p>'; return false;">About Us</a></li>
+                    <li><a href="#courses" onclick="document.getElementById('content-frame').srcdoc='<h2>Our Courses</h2><ul><li>Bachelor of Technology (B.Tech)</li><li>Master of Computer Applications (MCA)</li><li>Bachelor of Business Administration (BBA)</li></ul>'; return false;">Courses</a></li>
+                    <li><a href="#faculty" onclick="document.getElementById('content-frame').srcdoc='<h2>Our Faculty</h2><p>Our experienced professors, researchers, and mentors are leaders in their respective academic fields.</p>'; return false;">Faculty</a></li>
+                    <li><a href="#contact" onclick="document.getElementById('content-frame').srcdoc='<h2>Contact Us</h2><p><b>Email:</b> info@college.edu</p><p><b>Phone:</b> +91 1234567890</p><p><b>Address:</b> University Road, New Delhi, India</p>'; return false;">Contact Us</a></li>
+                </ul>
+            </td>
+
+            <!-- Main Content Frame (Task 3 & 4) -->
+            <td width="75%" valign="top">
+                <iframe id="content-frame" name="contentframe" srcdoc="<h2>Welcome to Home</h2><p>Welcome to our official college portal. Explore our programs, campus life, and achievements.</p>" width="100%" height="350" style="border:none;"></iframe>
+            </td>
+        </tr>
+    </thead>
+
+</body>
+</html>
