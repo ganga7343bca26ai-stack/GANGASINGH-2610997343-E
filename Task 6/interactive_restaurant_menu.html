@@ -1,0 +1,111 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Restaurant Menu</title>
+</head>
+<body>
+
+    <h1>WELCOME TO OUR RESTAURANT</h1>
+    <h2>Interactive Food Menu</h2>
+
+    <p>Click on any food item in the image to learn more about it.</p>
+
+    <!-- Food Image -->
+    <img
+        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&h=600&q=85&fm=jpg"
+        alt="A variety of delicious restaurant dishes"
+        width="900"
+        height="600"
+        usemap="#foodmap"
+    >
+
+    <!-- Image Map -->
+    <map name="foodmap">
+
+        <!-- 1. Pizza - Circle -->
+        <area shape="circle"
+              coords="230,350,85"
+              href="https://en.wikipedia.org/wiki/Pizza"
+              alt="Pizza"
+              title="Click to learn about Pizza"
+              target="_blank">
+
+        <!-- 2. Burger - Circle -->
+        <area shape="circle"
+              coords="680,180,70"
+              href="https://en.wikipedia.org/wiki/Hamburger"
+              alt="Burger"
+              title="Click to learn about Burger"
+              target="_blank">
+
+        <!-- 3. French Fries - Rectangle -->
+        <area shape="rect"
+              coords="350,200,490,300"
+              href="https://en.wikipedia.org/wiki/French_fries"
+              alt="French Fries"
+              title="Click to learn about French Fries"
+              target="_blank">
+
+        <!-- 4. Menu Card - Rectangle -->
+        <area shape="rect"
+              coords="0,0,150,100"
+              href="https://en.wikipedia.org/wiki/Menu"
+              alt="Restaurant Menu Card"
+              title="Learn about restaurant menus"
+              target="_blank">
+
+        <!-- 5. Sandwich - Polygon -->
+        <area shape="poly"
+              coords="50,180,150,140,230,200,180,270,90,250"
+              href="https://en.wikipedia.org/wiki/Sandwich"
+              alt="Sandwich"
+              title="Click to learn about Sandwich"
+              target="_blank">
+
+        <!-- 6. Cake Slice - Polygon -->
+        <area shape="poly"
+              coords="550,380,650,350,720,420,620,480"
+              href="https://en.wikipedia.org/wiki/Cake"
+              alt="Cake Slice"
+              title="Click to learn about Cake"
+              target="_blank">
+
+        <!-- 7. Remaining Area - Default -->
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/Food"
+              alt="Other Food Items"
+              title="Explore other food items"
+              target="_blank">
+
+    </map>
+
+    <hr>
+
+    <h2>Our Special Menu</h2>
+
+    <h3>Pizza</h3>
+    <p>Pizza is a popular dish made with dough, tomato sauce,
+    cheese and a variety of toppings.</p>
+
+    <h3>Burger</h3>
+    <p>A burger is made with a bun, vegetables, sauces
+    and a patty.</p>
+
+    <h3>French Fries</h3>
+    <p>French fries are crispy potato strips that are
+    usually served with ketchup.</p>
+
+    <h3>Sandwich</h3>
+    <p>A sandwich consists of bread filled with vegetables,
+    cheese or other ingredients.</p>
+
+    <h3>Cake Slice</h3>
+    <p>Cake is a sweet dessert made with ingredients
+    such as flour, sugar and eggs.</p>
+
+    <h3>Thank You for Visiting!</h3>
+    <p>Enjoy delicious food at our restaurant.</p>
+
+</body>
+</html>
